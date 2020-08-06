@@ -21,11 +21,11 @@ generateNotes(1) // create any amount of notes based on value amount
 
 GENERAL FUNCTIONS 
 
-makeNote(note, dueIn) //create a note with 2 parameters, string input for note data and days due - will be set to 7 days only
+makeNote(note, dueIn) //adds to log - create a note with 2 parameters, string input for note data and days due - will be set to 7 days only
 
 emptyLog() // empty log array
 
-editNote() //
+editNote() 
 
 saveNote() // runs makeLog()
 
@@ -33,7 +33,7 @@ delNote() // delete a note, empty object and remove from log, only works for cur
 
 latestNote() // get latest note in the log
 
-thisWeek // object
+thisWeek // view entire record object
 
 
 
