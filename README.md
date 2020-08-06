@@ -2,11 +2,7 @@
 
 ## Generate a single note and log or change the parameter to make as many as you want, access infor is for the latest update only
 
-generateNotes(5)
-thisWeek.log
-
-
-When you run main.js you will get an array of objects that are self generating todos every 3 seconds 
+When you run main.js you will get an array of 5 objects that are self generating todos with the note id for the object, log, and key map. They should all match and the count will reflect the log count. 
 
 ## Comment out code to see the log alone  with matching ids accross the object, log and key Map. All id values need to match. 
 
