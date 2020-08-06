@@ -161,6 +161,8 @@ map1.set(keyMapUser, thisWeek.log);
 
 
 }
-
-setInterval(() => console.log(generateNotes(1)), 3000)
-setInterval(() => console.log(console.log(thisWeek.log)), 3000)
+//
+//setInterval(() => console.log(generateNotes(1)), 2000)
+//setInterval(() => console.log(console.log(thisWeek.log)), 2000)
+console.log(generateNotes(5))
+console.log(thisWeek.log)
