@@ -16,3 +16,34 @@ setInterval(() => console.log(console.log(thisWeek.log)), 2000)
 
 ]
 
+
+
+1. Reducing multiple values to output a single vaue  
+  	
+~~~~ js
+
+generateNotes(1) // create any amount of notes based on value amount 
+
+GENERAL FUNCTIONS 
+
+makeNote(note, dueIn) //create a note with 2 parameters, string input for note data and days due - will be set to 7 days only
+
+emptyLog() // empty log array
+
+editNote() //
+
+saveNote() // runs makeLog()
+
+delNote() // delete a note, empty object and remove from log, only works for current record
+
+latestNote() // get latest note in the log
+
+thisWeek // object
+
+
+
+
+
+~~~~
+
+
