@@ -2,14 +2,35 @@
 <html>
 <body>
 
-<h2>JavaScript addEventListener()</h2>
+<h2>Todo Generator</h2>
 
-<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<p id='list'>Generate List of Todos</p>
 
-<button id="myBtn">Try it</button>
+<button id='myBtn'>Generate Todos</button>
 
-<p id="demo"></p>
+<ol id="myTodos"></ol>
 
+
+<button onclick="addTodo()">Save</button>
+<button onclick="rmvTodo()">Delete</button>
+<button onclick="addInput()">New</button>
+
+
+<script>
+  let items = [
+  generateNotes(2)
+      ],
+      ul = document.createElement('ol');
+
+  document.getElementById('list').appendChild(ul);
+
+  items.forEach(function (item) {
+      let li = document.createElement('li');
+      ul.appendChild(li);
+
+      li.innerHTML += item;
+  });
+  </script>
 
 
 

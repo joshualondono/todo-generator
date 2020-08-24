@@ -158,6 +158,8 @@ map1.set(keyMapUser, thisWeek.log);
 }
 */
 
+
+
 const generateNotes = function(num = 1){
 thisWeek.generateNote(num) //Parameter accepts record count has bug
  const logAtIndexO = thisWeek.log[num - 1]
@@ -169,7 +171,9 @@ map1.set(keyMapUser, thisWeek.log);
 
   if(thisWeek.log[thisWeek.count - 1].id === thisWeek.id && keyMapUserView[thisWeek.count - 1].id === thisWeek.id) {
 
-    return thisWeek.log[0].note + ',' + thisWeek.log[1].note + ',' + thisWeek.log[2].note + ',' + thisWeek.log[3].note + ',' + thisWeek.log[4].note + ',' + thisWeek.log[5].note
+const output = "'" + thisWeek.log[0].note + "'" + ',' + "'" + thisWeek.log[1].note + "'" + ',' + "'" + thisWeek.log[2].note + "'" + ',' + "'" + thisWeek.log[3].note + "'" + ',' + "'" + thisWeek.log[4].note + "'"
+
+      return output
   } else {
     return false
   }
