@@ -138,7 +138,7 @@ const thisWeek = {
 
 
 //Validation testing - Under 4 records throws error, error is in viewNotes function, describe loop function when array count is under 4 records
-
+/*
 const generateNotes = function(num = 1){
 thisWeek.generateNote(num) //Parameter accepts record count has bug
  const logAtIndexO = thisWeek.log[num - 1]
@@ -155,14 +155,28 @@ map1.set(keyMapUser, thisWeek.log);
     return false
   }
 
+}
+*/
 
+const generateNotes = function(num = 1){
+thisWeek.generateNote(num) //Parameter accepts record count has bug
+ const logAtIndexO = thisWeek.log[num - 1]
+ //checks counter is working by comparing count to log index, if values are different dispay error
+  const map1 = new Map();
+  const keyMapUser = '3b7f3sbks7'
+map1.set(keyMapUser, thisWeek.log);
+  const keyMapUserView = map1.get(keyMapUser);
 
+  if(thisWeek.log[thisWeek.count - 1].id === thisWeek.id && keyMapUserView[thisWeek.count - 1].id === thisWeek.id) {
 
-
+    return thisWeek.log[0].note + ',' + thisWeek.log[1].note + ',' + thisWeek.log[2].note + ',' + thisWeek.log[3].note + ',' + thisWeek.log[4].note + ',' + thisWeek.log[5].note
+  } else {
+    return false
+  }
 
 }
 //
 //setInterval(() => console.log(generateNotes(1)), 2000)
 //setInterval(() => console.log(console.log(thisWeek.log)), 2000)
-console.log(generateNotes(5))
-console.log(thisWeek.log)
+//console.log(generateNotes(5))
+//console.log(thisWeek.log)
